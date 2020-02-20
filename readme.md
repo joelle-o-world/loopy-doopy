@@ -1,6 +1,6 @@
 # loopy-doopy
 
-git remote add origin https://github.com/joelyjoel/loopy-doopy.git Designed for use with video game stems.
+A simple javascript class for synchronising audio loops using web api. Designed for use with video game stems.
 
 ## Install
 ```
