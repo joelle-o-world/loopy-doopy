@@ -1,0 +1,28 @@
+{
+  "name": "loopy-doopy",
+  "version": "1.0.0",
+  "description": "A simple javascript class for synchronising audio loops using web api.",
+  "main": "src/LoopyDoopy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelyjoel/loopy-doopy.git"
+  },
+  "keywords": [
+    "loops",
+    "sync",
+    "synchronisation",
+    "audio",
+    "web",
+    "video",
+    "game"
+  ],
+  "author": "Joelyjoel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelyjoel/loopy-doopy/issues"
+  },
+  "homepage": "https://github.com/joelyjoel/loopy-doopy#readme"
+}

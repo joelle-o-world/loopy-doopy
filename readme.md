@@ -1,6 +1,6 @@
 # loopy-doopy
 
-A simple javascript class for synchronising loops using web api. Designed for use with video game stems.
+git remote add origin https://github.com/joelyjoel/loopy-doopy.git Designed for use with video game stems.
 
 ## Install
 ```
@@ -14,7 +14,7 @@ import LoopyDoopy from 'loopy-doopy';
 // create a new instance
 const myLooper = new LoopyDoopy();
 
-// Add samples (asynchronously with ajax)
+// Add audio files (asynchronously with ajax)
 myLooper.loadSamples(
   './bagpipe-loop.wav',
   './tin-whistle-riff.mp3',
@@ -26,3 +26,5 @@ myLooper.onload = () => {
   myLooper.start();
 }
 ```
+
+NOTE: For this to work your samples must have equal duration or durations that are integer mutliples of one another.
