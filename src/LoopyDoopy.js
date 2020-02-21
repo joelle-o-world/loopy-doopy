@@ -60,7 +60,7 @@ export class LoopyDoopy {
     }
 
     loopDuration(channel=0) {
-        return this.buffers[channel].duration / this.this.bufferSources[channel].playbackRate.value
+        return this.buffers[channel].duration / this.bufferSources[channel].playbackRate.value
     }
 
     nextLoopTime(channel = 0) {
