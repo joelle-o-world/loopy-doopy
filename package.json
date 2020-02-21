@@ -1,6 +1,6 @@
 {
   "name": "loopy-doopy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple javascript class for synchronising audio loops using web api.",
   "main": "src/LoopyDoopy.js",
   "scripts": {
