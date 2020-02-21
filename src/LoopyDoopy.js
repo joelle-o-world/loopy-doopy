@@ -18,12 +18,16 @@ export class LoopyDoopy {
             request.open('get', url, true);
             request.responseType = 'arraybuffer';
             
-            request.onload = async () => {
-                let buffer = await this.ctx.decodeAudioData(request.response);
-                --this.loading;
-                // If loading count has reached zero fire `onload`.
-                if(this.loading == 0 && this.onload)
-                    this.onload();
+            request.onload = () => {
+                this.ctx.decodeAudioData(request.response, buffer => {
+                    --this.loading;
+                    // If loading count has reached zero fire `onload`.
+                    if(this.loading == 0 && this.onload)
+                        this.onload();
+
+                    this.buffers[i] = buffer;
+                })
+                
             }
 
             ++this.loading;
